@@ -8,22 +8,24 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.GridPane?>
 
-<GridPane alignment="CENTER" hgap="10.0" maxHeight="459.0" maxWidth="566.0" minHeight="459.0" minWidth="566.0" prefHeight="459.0" prefWidth="566.0" vgap="10.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="sample.Controller">
+<GridPane alignment="CENTER" hgap="10.0" maxHeight="459.0" maxWidth="566.0" minHeight="459.0" minWidth="566.0" pickOnBounds="false" prefHeight="459.0" prefWidth="566.0" vgap="10.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="sample.Controller">
   <children>
-    <Pane prefHeight="459.0" prefWidth="566.0" GridPane.columnIndex="0" GridPane.rowIndex="0">
+    <AnchorPane id="AnchorPane" minHeight="-Infinity" minWidth="-Infinity" prefHeight="-1.0" prefWidth="-1.0" GridPane.columnIndex="0" GridPane.hgrow="ALWAYS" GridPane.rowIndex="0" GridPane.valignment="TOP" GridPane.vgrow="ALWAYS">
       <children>
-        <Button fx:id="load" layoutX="505.0" layoutY="425.0" mnemonicParsing="false" text="Load" />
-        <TextArea layoutX="14.0" layoutY="14.0" prefHeight="402.0" prefWidth="545.0" wrapText="true" />
-        <TableView fx:id="table" editable="true" layoutX="14.0" layoutY="15.0" prefHeight="402.0" prefWidth="544.999977929685" rotate="0.0" tableMenuButtonVisible="true">
-          <!--<columns>
+        <Button fx:id="load" mnemonicParsing="false" text="Load" AnchorPane.bottomAnchor="13.0" AnchorPane.rightAnchor="14.0" />
+        <TableView fx:id="table" editable="true" maxWidth="-1.0" pickOnBounds="false" prefHeight="414.0" prefWidth="559.0" rotate="0.0" scaleX="1.0" style="" tableMenuButtonVisible="true" AnchorPane.bottomAnchor="45.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="7.0" AnchorPane.topAnchor="0.0">
+          <columns>
             <TableColumn id="id" prefWidth="75.0" text="id" fx:id="id" />
             <TableColumn id="date" prefWidth="75.0" text="date" fx:id="date" />
             <TableColumn id="name" prefWidth="75.0" text="name" fx:id="name" />
             <TableColumn id="text" prefWidth="75.0" text="text" fx:id="text" />
-          </columns>-->
+          </columns>
         </TableView>
+        <Button fx:id="add" mnemonicParsing="false" text="Add" AnchorPane.bottomAnchor="14.0" AnchorPane.rightAnchor="77.0" />
+        <Button fx:id="update" mnemonicParsing="false" text="Update" AnchorPane.bottomAnchor="13.0" AnchorPane.rightAnchor="134.0" />
+        <Button fx:id="delete" mnemonicParsing="false" text="Delete" AnchorPane.bottomAnchor="12.0" AnchorPane.rightAnchor="218.0" />
       </children>
-    </Pane>
+    </AnchorPane>
   </children>
   <columnConstraints>
     <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
